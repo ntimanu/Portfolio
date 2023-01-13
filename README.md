@@ -23,11 +23,17 @@
   **Visual studio**
   Visual studio for HTML and CSS
   **Figma**
+  
   As a referrence
+  
   **Git**
+  
   To control our files ...
+  
   **Github**
+  
   To connect our codes with our repo.
+  
 ### Key Features
 - **[A webpage that gives you all the information of the owner]**
 
