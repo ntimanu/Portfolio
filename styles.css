@@ -102,27 +102,14 @@ h1 {
 #headone {
   width: 327px;
   height: 150px;
-
-  /* Header / 2 */
-
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-
-  /* or 130% */
-
   display: flex;
   align-items: center;
-
-  /* Neutrals/N800 */
-
   color: #172b4d;
-
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
