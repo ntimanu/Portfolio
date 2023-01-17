@@ -5,6 +5,8 @@
 .header {
   display: flex;
   justify-content: space-between;
+  margin-right: -20px;
+  margin-left: 20px;
 }
 
 .navbar-logo {
@@ -14,13 +16,18 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
   color: #6070ff;
-  margin-left: -20px;
   list-style-type: none;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .navbar-toggle {
-  margin-right: 40px;
+  margin-right: 80px;
   list-style-type: none;
 }
 
@@ -40,10 +47,13 @@ h1 {
 }
 
 #info {
+  left: 24px;
+  top: 276px;
+  border-radius: nullpx;
   width: 327px;
   height: 146px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
@@ -67,14 +77,53 @@ h1 {
   background-image: url(header-shapes-mobile.png);
   position: absolute;
   width: 375px;
-  height: 600px;
+  height: 718px;
   left: 0;
   top: 0;
-  margin-right: 50px;
-  margin-left: 50px;
 }
 
 .text {
-  margin-left: 20px;
-  margin-top: 70px;
+  margin-left: 24px;
+  margin-top: 140px;
+}
+
+.container {
+  position: absolute;
+  width: 375px;
+  height: 718px;
+  left: 0;
+  top: 0;
+
+  /* Neutrals/N0 */
+
+  background: #fff;
+}
+
+#headone {
+  width: 327px;
+  height: 150px;
+
+  /* Header / 2 */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+
+  /* Neutrals/N800 */
+
+  color: #172b4d;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
