@@ -1,17 +1,12 @@
-* {
-  font-family: 'poppins', sans-serif;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
-  margin-right: -20px;
-  margin-left: 20px;
 }
 
 .navbar-logo {
   width: 76px;
   height: 20px;
+  font-family: 'poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -27,31 +22,14 @@
 }
 
 .navbar-toggle {
-  margin-right: 80px;
+  margin-right: 40px;
   list-style-type: none;
 }
 
-h1 {
-  width: 327px;
-  height: 150px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-  color: #172b4d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
 #info {
-  left: 24px;
-  top: 276px;
-  border-radius: nullpx;
   width: 327px;
   height: 146px;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -60,9 +38,12 @@ h1 {
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin-left: 24px;
+  margin-top: -20px;
 }
 
 #outro {
+  font-family: 'poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -71,10 +52,10 @@ h1 {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-left: 24px;
 }
 
 .box {
-  background-image: url(header-shapes-mobile.png);
   position: absolute;
   width: 375px;
   height: 718px;
@@ -83,25 +64,23 @@ h1 {
 }
 
 .text {
-  margin-left: 24px;
-  margin-top: 140px;
-}
-
-.container {
-  position: absolute;
+  background: white;
+  background-image: url("header-shapes-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: auto;
+  background-position: bottom bottom;
   width: 375px;
   height: 718px;
-  left: 0;
-  top: 0;
-
-  /* Neutrals/N0 */
-
-  background: #fff;
+  padding-top: 40px;
+  position: absolute;
+  margin-top: 60px;
 }
 
 #headone {
   width: 327px;
   height: 150px;
+  font-family: 'poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -112,4 +91,10 @@ h1 {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-left: 24px;
+  margin-top: 60px;
+}
+
+#social {
+  margin-left: 24px;
 }
