@@ -1,9 +1,25 @@
+.all-project {
+position: relative;
+width: 375px;
+height: 5410px;
+background: #F7F7F9;
+}
 .header {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
-
+.container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 114px 20px;
+gap: 12px;
+position: absolute;
+width: 375px;
+height: 604px;
+top: -820px;
+}
 .navbar-logo {
   width: 76px;
   height: 20px;
@@ -84,9 +100,9 @@
   height: 718px;
   padding-top: 40px;
   position: absolute;
-  margin-top: 60px;
+  margin-top: -60px;
+  margin-left: -20px;
 }
-
 .headone {
   width: 327px;
   height: 150px;
@@ -110,7 +126,19 @@
 }
 
 .work-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #F7F7F9;
+  padding: 10px;
+  height: 2788px;
+  width: 375px;
+  gap: 88px;
+  top: 600px;
+  margin-top: 820px;
+  
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   padding: 114px 24px;
@@ -119,7 +147,7 @@
   width: 375px;
   height: 2788px;
   left: 0;
-  top: 718px;
+  top: 718px; */
 }
 
 .second {
@@ -331,13 +359,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 114px 24px;
+  padding: 114px 0px;
   gap: 24px;
   position: absolute;
   width: 375px;
   height: 1125.15px;
-  top: 3506px;
-  background-color: #fff;
+  top: 2840px;
+  /* background-color: rgb(240, 227, 227); */
+  background: #FFFFFF;
+  /* margin-left: -40px; */
+  border-radius: 0 26% 0 0/0 8% 0 0;
 }
 
 .topabout {
@@ -351,6 +382,8 @@
 }
 
 .myselftxt {
+  width: 327px;
+  height: 101px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -407,7 +440,7 @@
 }
 
 .outro2 {
-  width: 119px;
+  width: 120px;
   height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -417,29 +450,31 @@
   color: #7f8cff;
 }
 
-.social2 {
+.icons {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-evenly;
   padding: 0;
   margin-top: -10px;
   width: 200px;
   height: 40px;
+  list-style: none;
+  gap: 10px;
 }
 
 .languages {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
   width: 327px;
   height: 320.15px;
+  margin-left: 0px;
 }
 
 .languagetxt {
   position: absolute;
   height: 24px;
-  left: 12px;
+  left: -10px;
   right: 78px;
   margin-left: 40px;
   font-family: 'Poppins', sans-serif;
@@ -467,10 +502,11 @@
   align-items: center;
   padding: 12px;
   gap: 12px;
-  margin-left: -20px;
+  margin-left: -60px;
   margin-top: 60px;
   width: 327px;
   height: 248.15px;
+
 }
 
 .js2 {
@@ -479,6 +515,7 @@
   list-style: none;
   background: #f7f7f9;
   border-radius: 8px;
+
 }
 
 .html2 {
@@ -501,7 +538,7 @@
   position: absolute;
   width: 48px;
   height: 48px;
-  left: 60px;
+  left: 40px;
   margin-top: 10px;
 }
 
@@ -510,7 +547,7 @@
   height: 24px;
   left: 76px;
   right: 12px;
-  margin-left: 55px;
+  margin-left: 30px;
   margin-top: 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -534,7 +571,7 @@
   line-height: 20px;
   display: flex;
   align-items: center;
-  margin-left: 55px;
+  margin-left: 30px;
   margin-top: 20px;
   color: #253858;
 }
@@ -543,7 +580,7 @@
   position: absolute;
   width: 48px;
   height: 48px;
-  left: 60px;
+  left: 40px;
   margin-top: 10px;
 }
 
@@ -560,7 +597,7 @@
   display: flex;
   align-items: center;
   color: #253858;
-  margin-left: 55px;
+  margin-left: 30px;
   margin-top: 20px;
 }
 
@@ -568,7 +605,7 @@
   position: absolute;
   width: 48px;
   height: 48px;
-  left: 60px;
+  left: 40px;
   margin-top: 10px;
 }
 
@@ -580,7 +617,7 @@
 .frameworktxt {
   position: absolute;
   height: 24px;
-  left: 50px;
+  left: 30px;
   right: 78px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -603,9 +640,10 @@
 }
 
 .separator {
-  margin-top: 80px;
+  margin-top: 50px;
   width: 327px;
   height: 1px;
+  margin-left: -40px;
 }
 
 .skills {
@@ -624,7 +662,8 @@
 }
 
 .separator2 {
-  margin-top: 80px;
+  margin-top: 50px;
   width: 327px;
   height: 1px;
+  margin-left: -40px;
 }
