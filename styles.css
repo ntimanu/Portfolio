@@ -1,25 +1,28 @@
 .all-project {
-position: relative;
-width: 375px;
-height: 5410px;
-background: #F7F7F9;
+  position: relative;
+  width: 375px;
+  height: 5410px;
+  background: #f7f7f9;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
+
 .container {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 114px 20px;
-gap: 12px;
-position: absolute;
-width: 375px;
-height: 604px;
-top: -820px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 20px;
+  gap: 12px;
+  position: absolute;
+  width: 375px;
+  height: 604px;
+  top: -820px;
 }
+
 .navbar-logo {
   width: 76px;
   height: 20px;
@@ -103,6 +106,7 @@ top: -820px;
   margin-top: -60px;
   margin-left: -20px;
 }
+
 .headone {
   width: 327px;
   height: 150px;
@@ -130,14 +134,14 @@ top: -820px;
   grid-template-columns: 1fr;
   box-sizing: border-box;
   border-radius: 10px;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   padding: 10px;
   height: 2788px;
   width: 375px;
   gap: 88px;
   top: 600px;
   margin-top: 820px;
-  
+
   /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -359,14 +363,16 @@ top: -820px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 114px 0px;
+  padding: 114px 0;
   gap: 24px;
   position: absolute;
   width: 375px;
   height: 1125.15px;
   top: 2840px;
+
   /* background-color: rgb(240, 227, 227); */
-  background: #FFFFFF;
+  background: #fff;
+
   /* margin-left: -40px; */
   border-radius: 0 26% 0 0/0 8% 0 0;
 }
@@ -468,7 +474,7 @@ top: -820px;
   align-items: flex-start;
   width: 327px;
   height: 320.15px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .languagetxt {
@@ -506,7 +512,6 @@ top: -820px;
   margin-top: 60px;
   width: 327px;
   height: 248.15px;
-
 }
 
 .js2 {
@@ -515,7 +520,6 @@ top: -820px;
   list-style: none;
   background: #f7f7f9;
   border-radius: 8px;
-
 }
 
 .html2 {
