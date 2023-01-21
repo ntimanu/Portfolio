@@ -1,9 +1,10 @@
 .all-project {
   /* position: relative; */
-  width: 375px;
+   width: 375px;
   height: 4000px;
-  top: 0;
-  background: #f7f7f9;
+  top: 0px;
+   background: #f7f7f9; 
+  
 }
 
 .header {
@@ -21,7 +22,7 @@
   position: absolute;
   width: 375px;
   height: 604px;
-  top: 0;
+  top: 0px;
 }
 
 .navbar-logo {
@@ -140,7 +141,7 @@
   height: 2788px;
   width: 375px;
   gap: 88px;
-  top: 0;
+  top: 0px;
   margin-top: 840px;
 }
 
