@@ -1,8 +1,10 @@
 .all-project {
-  position: relative;
-  width: 375px;
-  height: 5410px;
-  background: #f7f7f9;
+  /* position: relative; */
+   width: 375px;
+  height: 4000px;
+  top: 0px;
+   background: #f7f7f9; 
+  
 }
 
 .header {
@@ -20,7 +22,7 @@
   position: absolute;
   width: 375px;
   height: 604px;
-  top: -820px;
+  top: 0px;
 }
 
 .navbar-logo {
@@ -135,23 +137,12 @@
   box-sizing: border-box;
   border-radius: 10px;
   background-color: #f7f7f9;
-  padding: 10px;
+  padding: 20px;
   height: 2788px;
   width: 375px;
   gap: 88px;
-  top: 600px;
-  margin-top: 820px;
-
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 114px 24px;
-  gap: 88px;
-  position: absolute;
-  width: 375px;
-  height: 2788px;
-  left: 0;
-  top: 718px; */
+  top: 0px;
+  margin-top: 840px;
 }
 
 .second {
@@ -368,7 +359,7 @@
   position: absolute;
   width: 375px;
   height: 1125.15px;
-  top: 2840px;
+  top: 3640px;
 
   /* background-color: rgb(240, 227, 227); */
   background: #fff;
