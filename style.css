@@ -15,11 +15,11 @@
   width: 375px;
   height: 604px;
   top: 92px;
-  gap: 14px;
+  gap: 12px;
   background-image: url("img/header-shapes-mobile.png");
 }
 
-nav {
+header {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -27,6 +27,10 @@ nav {
   width: 375px;
   top: 44px;
   border-radius: 0;
+}
+
+header a {
+  text-decoration: none;
 }
 
 .mylogo {
@@ -78,8 +82,6 @@ main h1 {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0;
-  text-align: left;
   width: 327px;
   height: 146px;
   margin-top: 260px;
@@ -91,15 +93,16 @@ main h1 {
 .connect {
   font-style: normal;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
   width: 120px;
   height: 24px;
+  top: 20px;
   margin-left: 24px;
-  margin-top: 12px;
   color: #7f8cff;
+  text-decoration: none;
 }
 
 ul li {
@@ -112,6 +115,4 @@ ul li {
   height: 20.000062942504883px;
   width: 170.1666717529297px;
   margin-left: 24px;
-  margin-top: 0;
-  border-radius: 0;
 }
