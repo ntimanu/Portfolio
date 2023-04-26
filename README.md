@@ -51,8 +51,8 @@ Clone this repository to your desired folder:
 Example commands:
 
 ```sh
-  cd portfolio-project
-  git clone https://github.com/ntimanu/portfolio-project
+  cd Portfolio
+  git clone https://github.com/ntimanu/Portfolio
 ```
 
 ### Install
