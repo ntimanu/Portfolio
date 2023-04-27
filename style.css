@@ -291,6 +291,7 @@ ul li {
   height: 48px;
   margin-top: 460px;
   left: 40px;
+  background: #FFFFFF;
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
@@ -363,6 +364,7 @@ ul li {
   width: 166px;
   height: 48px;
   margin-left: -160px;
+  background: #FFFFFF;
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
