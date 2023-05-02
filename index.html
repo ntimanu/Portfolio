@@ -200,6 +200,51 @@
           />
         </ul>
       </section>
+      <section class="contactme">
+        <h2 class="contacttxt font">Contact me</h2>
+        <p class="paragraph font">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <form
+          id="form-id"
+          action="https://formspree.io/f/meqwgnyz"
+          method="post"
+        >
+          <input
+            type="text"
+            name="name"
+            id="form-name"
+            maxlength="30"
+            placeholder="Enter your name"
+            class="inputtxt1 radius"
+            required
+          />
+          <input
+            name="Email"
+            id="email-id"
+            type="email"
+            placeholder="Enter your email address"
+            class="inputtxt2 radius"
+            required
+          />
+          <div id="errormessage"></div>
+          <textarea
+            name="textarea"
+            id="form-message"
+            placeholder="Write your message here"
+            cols="30"
+            rows="10"
+            class="inputtxt3 radius"
+            maxlength="500"
+            required
+          ></textarea>
+          <button class="button3" type="submit" name="submit" value="submit">
+            <p class="button3txt radius">Get in touch</p>
+          </button>
+        </form>
+      </section>
     </section>
   </body>
 </html>
