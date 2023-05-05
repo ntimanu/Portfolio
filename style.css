@@ -57,6 +57,10 @@ header a {
   color: #6070ff;
 }
 
+.navbar-links {
+  display: none;
+}
+
 .hamburger {
   display: block;
   cursor: pointer;
@@ -108,7 +112,7 @@ main h1 {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
-  width: 120px;
+  width: 128px;
   height: 24px;
   top: 20px;
   margin-left: 24px;
@@ -172,7 +176,6 @@ ul li {
   gap: 12px;
   width: 236px;
   height: 32px;
-  margin-left: -60px;
 }
 
 .cardone ul {
@@ -225,6 +228,20 @@ ul li {
   color: #344563;
 }
 
+/* .langlist {
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 12px;
+gap: 12px;
+width: 327px;
+height: 248.15px;
+left: 0px;
+top: 72px;
+border-radius: 0px;
+padding: 12px;
+
+} */
 .lang {
   display: flex;
   flex-direction: row;
@@ -233,7 +250,6 @@ ul li {
   gap: 8px;
   width: 214px;
   height: 24px;
-  margin-left: -80px;
 }
 
 .lang .langtxt {
@@ -289,7 +305,7 @@ ul li {
   position: absolute;
   width: 128px;
   height: 48px;
-  margin-top: 460px;
+  margin-top: 40px;
   left: 40px;
   background: #fff;
   border: 1px solid #6070ff;
@@ -344,15 +360,24 @@ ul li {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  left: 0;
+  margin-top: 47px;
 }
 
 .about .connect {
-  top: 20px;
-  margin-left: -208px;
+  height: 24px;
+  width: 128px;
+  margin-left: 0;
+  margin-top: 0;
+  border-radius: 0;
 }
 
 .about .social {
-  margin-left: -140px;
+  height: 40px;
+  width: 200px;
+  margin-left: 0;
+  margin-top: 20px;
+  border-radius: 0;
 }
 
 .about button {
@@ -361,9 +386,8 @@ ul li {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  width: 166px;
+  width: 168px;
   height: 48px;
-  margin-left: -160px;
   background: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -404,6 +428,8 @@ ul li {
 
 .languagetxt {
   position: absolute;
+  width: 237px;
+  top: 508px;
   height: 24px;
   left: 32px;
   right: 78px;
@@ -656,4 +682,726 @@ ul li {
 .button3::after {
   background-color: #fff;
   color: black;
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 5125px;
+    width: 1440px;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    position: relative;
+    background: #dfe1e6;
+  }
+
+  /* .container {
+    height: 916px;
+    width: 1440px;
+    left: 0;
+    top: 1px;
+    position: absolute;
+    background: #0d4ed1;
+    border-radius: 0 0 0 10%/0 0 0 10%;
+  } */
+  .container {
+    position: relative;
+    width: 1440px;
+    height: 5125px;
+    background: #f4f5f7;
+  }
+
+  header {
+    position: absolute;
+    width: 1440px;
+    height: 92px;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    border-radius: 0;
+    background-color: #fff;
+  }
+
+  .container header,
+  .main {
+    position: absolute;
+    width: 1440px;
+    height: 916px;
+    left: 0;
+    top: 1px;
+    background: #fff;
+    border-radius: 0 0 0 10%/0 0 0 10%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar-links {
+    position: absolute;
+    padding: 0;
+    gap: 8px;
+    width: 258px;
+    height: 40px;
+    left: 1039px;
+    top: 16px;
+  }
+
+  .mylogo {
+    width: 76px;
+    height: 20px;
+    margin-left: 155px;
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6070ff;
+  }
+
+  .navbar-links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 18px;
+    position: absolute;
+    width: 258px;
+    height: 40px;
+    left: 0;
+    top: 0;
+  }
+
+  .main {
+    background-image: url(img/Header\ bg@2x.png);
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    height: 721.4596557617188px;
+    width: 1397.3985595703125px;
+    left: 34.6015625px;
+    top: 119px;
+    border-radius: 0;
+  }
+
+  main h1 {
+    width: 920px;
+    height: 122px;
+    margin-left: 220px;
+    margin-top: 120px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.37px;
+    color: #091e42;
+  }
+
+  .mytxt {
+    width: 920px;
+    height: 98px;
+    margin-left: 220px;
+    margin-top: 360px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+
+  .connect {
+    margin-left: 220px;
+  }
+
+  .social {
+    margin-left: 220px;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 142px;
+    gap: 142px;
+    position: relative;
+    width: 1440px;
+    height: 2694px;
+    left: 0;
+    top: 917px;
+  }
+
+  .card1 {
+    position: absolute;
+    height: 496px;
+    width: 1156px;
+    left: 142px;
+    top: 142px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+
+  .cardone .image {
+    display: none;
+  }
+
+  .card1image {
+    background-image: url(img/Snapshoot_Portfoliocard1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 544px;
+    height: 448px;
+    left: 24px;
+    top: 24px;
+    border-radius: 8px;
+  }
+
+  .card1txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    position: absolute;
+    width: 544px;
+    height: 445px;
+    left: 590px;
+    top: 24px;
+  }
+
+  .cardone h2 {
+    width: 496px;
+    height: 46px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .conpy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+    width: 320px;
+    height: 40px;
+    margin-left: 0;
+  }
+
+  /* .cardone ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    width: 214px;
+    height: 24px;
+    top: 180px;
+  }  */
+
+  .canopytxt {
+    width: 75px;
+    height: 26px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .backtxt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+    width: 122px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .yeartxt {
+    width: 38px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .cardtxt {
+    width: 496px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    top: 146px;
+    color: #344563;
+  }
+
+  .lang {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    width: 210px;
+    height: 24px;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    border-radius: 0;
+  }
+
+  /* #htmltxt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    width: 57px;
+    height: 24px;
+    background: #ebebff;
+    border-radius: 8px;
+  } */
+
+  .cardone button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    position: relative;
+    width: 129px;
+    height: 48px;
+    margin-top: 0;
+    left: 0;
+    background: #fff;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+  }
+
+  /* .btntxt {
+    width: 102px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #396df2;
+  } */
+  .card2 {
+    position: absolute;
+    height: 496px;
+    width: 1156px;
+    left: 142px;
+    top: 780px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+
+  .card2image {
+    background-image: url(img/Snapshoot_Portfoliocard2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 544px;
+    height: 448px;
+    left: 590px;
+    top: 24px;
+    border-radius: 8px;
+  }
+
+  .card2txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    position: absolute;
+    width: 544px;
+    height: 445px;
+    left: 24px;
+    top: 24px;
+  }
+
+  .card3 {
+    position: absolute;
+    height: 496px;
+    width: 1156px;
+    left: 142px;
+    top: 1418px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+
+  .card3image {
+    background-image: url(img/Snapshoot_Portfoliocard3.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 544px;
+    height: 448px;
+    left: 24px;
+    top: 24px;
+    border-radius: 8px;
+  }
+
+  .card3txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    position: absolute;
+    width: 544px;
+    height: 445px;
+    left: 590px;
+    top: 24px;
+  }
+
+  .card4 {
+    position: absolute;
+    height: 496px;
+    width: 1156px;
+    left: 142px;
+    top: 2056px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+
+  .card4image {
+    background-image: url(img/Snapshoot_Portfoliocard4.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 544px;
+    height: 448px;
+    left: 590px;
+    top: 24px;
+    border-radius: 8px;
+  }
+
+  .card4txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    position: absolute;
+    width: 544px;
+    height: 445px;
+    left: 24px;
+    top: 24px;
+  }
+
+  .about {
+    position: absolute;
+    width: 1440px;
+    height: 924px;
+    left: 0;
+    top: 3610px;
+    background: #fff;
+    border-radius: 0 10% 0 0/0 10% 0 0;
+  }
+
+  .aboutmyself {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    position: absolute;
+    width: 447px;
+    height: 311px;
+    left: 143px;
+    top: 160px;
+  }
+
+  .skilllist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    width: 684px;
+    height: 360px;
+    left: 614px;
+  }
+
+  .languagetxt {
+    position: absolute;
+    width: 582px;
+    top: 24px;
+    height: 24px;
+    left: 24px;
+    right: 78px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #344563;
+  }
+
+  .downarrow {
+    position: absolute;
+    left: 636px;
+    right: 25%;
+    top: 38px;
+    bottom: 30%;
+  }
+
+  .languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    width: 414px;
+    height: 144px;
+    margin-left: -224px;
+    margin-top: 72px;
+    border-radius: 0;
+  }
+
+  .js {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    color: #253858;
+    width: 122px;
+    height: 120px;
+    left: 12px;
+    top: 12px;
+    border-radius: 8px;
+    background: #f7f7f9;
+  }
+
+  .html {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    color: #253858;
+    width: 122px;
+    height: 120px;
+    left: 12px;
+    top: 76px;
+    background: #f7f7f9;
+    border-radius: 8px;
+  }
+
+  .css {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    align-items: flex-start;
+    color: #253858;
+    width: 122px;
+    height: 120px;
+    background: #f7f7f9;
+    border-radius: 8px;
+  }
+
+  #framework {
+    position: absolute;
+    top: 310px;
+  }
+
+  .arrow1 {
+    position: absolute;
+    height: 24px;
+    left: 636px;
+    right: 78px;
+    top: 310px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #344563;
+  }
+
+  #skills {
+    position: absolute;
+    top: 392px;
+  }
+
+  .arrow2 {
+    position: absolute;
+    height: 24px;
+    left: 636px;
+    right: 78px;
+    top: 392px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #344563;
+  }
+
+  .separator1 {
+    position: absolute;
+    width: 684px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 363px;
+    border-radius: 0;
+    background: #dfe1e6;
+  }
+
+  .separator2 {
+    position: absolute;
+    width: 684px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 441px;
+    bottom: 0;
+    background: #dfe1e6;
+  }
+
+  .contactme {
+    position: absolute;
+    width: 1440px;
+    height: 846px;
+    top: 4362px;
+    background-color: #6070ff;
+    border-radius: 10% 0 0 0/10% 0 0 0;
+  }
+
+  .contacttxt {
+    width: 801px;
+    height: 56px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 60px;
+    margin-left: 330px;
+  }
+
+  .paragraph {
+    width: 569px;
+    height: 102px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+    margin-top: 60px;
+    margin-left: 420px;
+  }
+
+  .inputtxt1 {
+    position: absolute;
+    height: 48px;
+    width: 447px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 340px;
+    bottom: 0;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+  }
+
+  .inputtxt2 {
+    position: absolute;
+    height: 48px;
+    width: 447px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 420px;
+    bottom: 0;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+  }
+
+  .inputtxt3 {
+    position: absolute;
+    height: 170px;
+    width: 447px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 500px;
+    bottom: 0;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+  }
+
+  .button3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    width: 142px;
+    height: 48px;
+    margin-left: 640px;
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  .button3txt {
+    width: 110px;
+    height: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
 }
