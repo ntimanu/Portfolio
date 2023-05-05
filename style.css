@@ -739,6 +739,7 @@ padding: 12px;
 
   .navbar-links {
     position: absolute;
+    display: block;
     padding: 0;
     gap: 8px;
     width: 258px;
