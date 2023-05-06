@@ -228,20 +228,6 @@ ul li {
   color: #344563;
 }
 
-/* .langlist {
-  display: flex;
-flex-direction: column;
-align-items: center;
-padding: 12px;
-gap: 12px;
-width: 327px;
-height: 248.15px;
-left: 0px;
-top: 72px;
-border-radius: 0px;
-padding: 12px;
-
-} */
 .lang {
   display: flex;
   flex-direction: row;
@@ -621,10 +607,10 @@ padding: 12px;
   line-height: 28px;
   position: absolute;
   height: 28px;
-  width: 427px;
+  width: 400px;
   top: 470px;
   right: 0;
-  left: 510px;
+  left: -10px;
 }
 
 .inputtxt3 {
@@ -695,15 +681,6 @@ padding: 12px;
     background: #dfe1e6;
   }
 
-  /* .container {
-    height: 916px;
-    width: 1440px;
-    left: 0;
-    top: 1px;
-    position: absolute;
-    background: #0d4ed1;
-    border-radius: 0 0 0 10%/0 0 0 10%;
-  } */
   .container {
     position: relative;
     width: 1440px;
@@ -895,16 +872,6 @@ padding: 12px;
     margin-left: 0;
   }
 
-  /* .cardone ul {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    gap: 8px;
-    width: 214px;
-    height: 24px;
-    top: 180px;
-  }  */
-
   .canopytxt {
     width: 75px;
     height: 26px;
@@ -967,17 +934,6 @@ padding: 12px;
     border-radius: 0;
   }
 
-  /* #htmltxt {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 12px;
-    width: 57px;
-    height: 24px;
-    background: #ebebff;
-    border-radius: 8px;
-  } */
-
   .cardone button {
     display: flex;
     flex-direction: row;
@@ -994,19 +950,6 @@ padding: 12px;
     border-radius: 8px;
   }
 
-  /* .btntxt {
-    width: 102px;
-    height: 24px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #396df2;
-  } */
   .card2 {
     position: absolute;
     height: 496px;
