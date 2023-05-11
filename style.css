@@ -318,6 +318,7 @@ ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 12px;
   gap: 10px;
   background: #fff;
@@ -545,6 +546,13 @@ ul li {
 
 .inputtxt1,
 .inputtxt2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
   height: 48px;
   padding: 1rem;
   border-radius: 8px;
@@ -561,6 +569,7 @@ ul li {
 }
 
 .inputtxt3 {
+  padding: 1rem;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -575,7 +584,7 @@ ul li {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  width: 32%;
+  width: 40%;
   color: #396df2;
 }
 
