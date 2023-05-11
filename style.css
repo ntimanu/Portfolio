@@ -320,6 +320,7 @@ ul li {
   align-items: center;
   justify-content: center;
   padding: 12px;
+  width: 44%;
   gap: 10px;
   background: #fff;
   border: 1px solid #6070ff;
@@ -575,7 +576,7 @@ ul li {
   border-radius: 8px;
 }
 
-.contactme .btntxt {
+.contactme.btntxt {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -584,7 +585,8 @@ ul li {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  width: 40%;
+  /* width: 40%; */
+  padding: 10px;
   color: #396df2;
 }
 
