@@ -10,6 +10,7 @@
 .container {
   background: #f7f7f9;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -41,7 +42,7 @@ header a {
   display: block;
   cursor: pointer;
   z-index: 1;
-  border:2px solid #000;
+  border: 2px solid #000;
 }
 
 .bar {
@@ -66,7 +67,6 @@ header a {
 }
 
 main h1 {
-
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -124,26 +124,29 @@ ul li {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
+
 .cardoneimage {
   width: 100%;
 }
+
 .cardoneimage > img {
   width: 100%;
 }
+
 .card1txt {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
 }
+
 .cardone h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  
 }
 
 .conpy {
@@ -152,7 +155,6 @@ ul li {
   align-items: center;
   padding: 0;
   gap: 12px;
-
 }
 
 .cardone ul {
@@ -160,7 +162,6 @@ ul li {
   align-items: center;
   padding: 0;
   gap: 8px;
-
 }
 
 .canopytxt {
@@ -180,7 +181,6 @@ ul li {
 }
 
 .yeartxt {
-
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -189,7 +189,6 @@ ul li {
 }
 
 .cardtxt {
- 
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -203,11 +202,9 @@ ul li {
   align-items: center;
   padding: 0;
   gap: 8px;
- 
 }
 
 .lang .langtxt {
-  
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -253,17 +250,6 @@ ul li {
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
-.cardone button:hover {
-  background: #6070ff;
-  color: #fff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  border-radius: 8px;
-}
-
-.cardone button:active {
-  background: #2230d2;
-  border-radius: 8px;
-}
 
 .btntxt {
   font-style: normal;
@@ -285,15 +271,16 @@ ul li {
   gap: 24px;
   background: #fff;
   border-radius: 0 26% 0 0/0 8% 0 0;
-  
 }
+
 .aboutmyself {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
 }
+
 .about h2 {
   font-style: normal;
   font-weight: 700;
@@ -313,7 +300,6 @@ ul li {
 }
 
 .about .social {
- 
   border-radius: 0;
 }
 
@@ -335,27 +321,41 @@ ul li {
   border-radius: 8px;
 }
 
+.cardone button:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+}
+
+.cardone button:active {
+  background: #2230d2;
+  border-radius: 8px;
+}
+
 .about button:active {
   background: #2230d2;
   border-radius: 8px;
 }
+
 .skilllist {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 100%;
-
 }
+
 .skilllist ul {
   width: 100%;
-  
 }
+
 .skilllist ul li {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+
 .downarrow {
   display: flex;
   flex-direction: row;
@@ -365,18 +365,17 @@ ul li {
   right: 25%;
   top: 37.5%;
   bottom: 37.5%;
-  border: 2px solid #ACB7C3;
+  border: 2px solid #acb7c3;
 }
 
 .languagetxt {
- 
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000;
 }
 
 .languages {
@@ -436,7 +435,7 @@ ul li {
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000;
 }
 
 .arrow1 {
@@ -444,20 +443,22 @@ ul li {
   right: 33.33%;
   top: 25%;
   bottom: 25%;
-  border: 2px solid #ACB7C3;
+  border: 2px solid #acb7c3;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
   border-radius: 8px;
 }
+
 .separator1 {
   height: 1px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: #DFE1E6;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #dfe1e6;
 }
+
 #skills {
   font-style: normal;
   font-weight: 500;
@@ -465,7 +466,7 @@ ul li {
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000;
 }
 
 .arrow2 {
@@ -473,7 +474,7 @@ ul li {
   right: 33.33%;
   top: 25%;
   bottom: 25%;
-  border: 2px solid #ACB7C3;
+  border: 2px solid #acb7c3;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -483,10 +484,10 @@ ul li {
 
 .separator2 {
   height: 1px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: #DFE1E6;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #dfe1e6;
 }
 
 .contactme {
@@ -499,7 +500,7 @@ ul li {
   flex-direction: column;
   align-items: center;
   padding: 114px 24px;
-  gap: 24
+  gap: 24;
 }
 
 .contacttxt {
@@ -510,7 +511,7 @@ ul li {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .paragraph {
@@ -520,19 +521,19 @@ ul li {
   line-height: 28px;
   text-align: center;
   margin-top: 12px;
-  color: #EBEBFF;
+  color: #ebebff;
 }
 
 #form-id {
-  
-  
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 52px;
   gap: 1rem;
 }
-.inputtxt1, .inputtxt2 {
+
+.inputtxt1,
+.inputtxt2 {
   height: 48px;
   border-radius: 8px;
   background: #fff;
@@ -548,7 +549,6 @@ ul li {
 }
 
 .inputtxt3 {
- 
   background: #fff;
   border: 1px solid #cfd8dc;
 }
