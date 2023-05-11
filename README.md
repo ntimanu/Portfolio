@@ -15,7 +15,7 @@
 
 # 📖 [Portfolio: setup and mobile first]
 
-**[Portfolio: setup and mobile first]** is a simple project that show a page of a portfolio that discribe the work, experience and contacts of the portfolio owner.
+**[Portfolio: setup and mobile first]** It is a simple project that show a page of a portfolio that discribe the work, experience and contacts of the portfolio owner.
 
 ## 🛠 Built With
 
