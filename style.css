@@ -692,7 +692,7 @@ ul li {
 
   .cardoneimage:hover {
     transform: scale(1.1);
-   }
+  }
 
   .cardone:nth-child(even) .cardoneimage {
     order: 2;
