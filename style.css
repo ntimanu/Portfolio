@@ -634,6 +634,10 @@ ul li {
     color: #6070ff;
   }
 
+  .mylogo:hover {
+    transform: rotate(-10deg);
+  }
+
   .navbar-links ul {
     display: flex;
     flex-direction: row;
@@ -685,6 +689,10 @@ ul li {
   .cardoneimage {
     align-self: center;
   }
+
+  .cardoneimage:hover {
+    transform: scale(1.1);
+   }
 
   .cardone:nth-child(even) .cardoneimage {
     order: 2;
