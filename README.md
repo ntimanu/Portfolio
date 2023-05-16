@@ -33,9 +33,7 @@ Boostrap 5
 
 - **[A webpage that gives you all the information of the owner]**
 
-## 🚀 Live Demo
-
-- [Coming Soon]
+## 🚀 Live Demo <a name="live-demo">https://ntimanu.github.io/Portfolio/</a>
 
 ## 💻 Getting Started
 
@@ -82,13 +80,12 @@ Example command:
 
 👤 **Emmanuel Ntihinyuka**
 
-
 - GitHub: [@ntimanu](https://github.com/ntimanu)
 - Twitter:[@emmantihinyuka](https://twitter.com/emmantihinyuka)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ntihinyuka-emmanuel-511890104/)
 
   **Emmanuel Kipngeno**
-   
+
 ## 🔭 Future Features
 
 - [ ] **[Add more forms]**
