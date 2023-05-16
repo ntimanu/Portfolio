@@ -33,7 +33,9 @@ Boostrap 5
 
 - **[A webpage that gives you all the information of the owner]**
 
-## 🚀 Live Demo <a href="https://ntimanu.github.io/Portfolio/" name="live-demo">live demo</a>
+## 🚀 Live Demo
+
+<a href="https://ntimanu.github.io/Portfolio/" name="live-demo">live demo</a>
 
 ## 💻 Getting Started
 
