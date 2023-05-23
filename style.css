@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 * {
   padding: 0;
@@ -635,7 +635,7 @@ ul li {
   }
 
   .navbar-links.active {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     right: 0;
@@ -710,7 +710,7 @@ ul li {
   }
 
   .navbar-links ul li::after {
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     background: #373232;
@@ -837,7 +837,7 @@ ul li {
   /* Contact me section */
 
   .contactme {
-    background-image: url('img/contact-form-bg.png');
+    background-image: url("img/contact-form-bg.png");
   }
 
   .contactme > h2 {
