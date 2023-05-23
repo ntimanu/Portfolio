@@ -35,7 +35,7 @@ Boostrap 5
 
 ## 🚀 Live Demo
 
-- [Coming Soon]
+<a href="https://ntimanu.github.io/Portfolio/" name="live-demo">live demo</a>
 
 ## 💻 Getting Started
 
@@ -82,13 +82,12 @@ Example command:
 
 👤 **Emmanuel Ntihinyuka**
 
-
 - GitHub: [@ntimanu](https://github.com/ntimanu)
 - Twitter:[@emmantihinyuka](https://twitter.com/emmantihinyuka)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ntihinyuka-emmanuel-511890104/)
 
   **Emmanuel Kipngeno**
-   
+
 ## 🔭 Future Features
 
 - [ ] **[Add more forms]**
