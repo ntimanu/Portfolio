@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <section class="container">
       <header>
         <a href="#" class="mylogo">My Logo</a>
         <nav>
-          <div class="hamburger">
+          <a class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-          </div>
+          </a>
         </nav>
         <div class="navbar-links">
+          <a href="" onclick="" class="close-button">&times;</a>
           <ul>
             <li><a href="#">Poltfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contactform">Contact</a></li>
           </ul>
         </div>
       </header>
@@ -58,7 +59,7 @@
           </ul>
         </section>
       </main>
-      <section class="work">
+      <section class="work" id="work">
         <section class="cardone card1">
           <div class="cardoneimage">
             <img
@@ -189,7 +190,7 @@
           </div>
         </section>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="aboutmyself">
           <h2>
             About <br />
@@ -261,7 +262,7 @@
           </ul>
         </div>
       </section>
-      <section class="contactme">
+      <section class="contactme" id="contactform">
         <h2 class="contacttxt font">Contact me</h2>
         <p class="paragraph font">
           If you have an application you are interested in developing, a feature
@@ -307,5 +308,6 @@
         </form>
       </section>
     </section>
+    <script src="script.js" defer></script>
   </body>
 </html>
