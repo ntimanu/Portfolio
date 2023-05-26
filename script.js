@@ -14,12 +14,12 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 const projectContent = [
   {
-    name: "Tonix",
+    name: "Tonic",
     title: ["CANOPY", "Back End Dev", "2015"],
     image: "img/Snapshoot Portfolio.png",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technology: ["html", "css", "javaScript"],
+    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
     live_demo: "#",
     source_code:
       "#",
@@ -30,18 +30,18 @@ const projectContent = [
     image: "img/Snapshoot Portfolio2.png",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technology: ["html", "css", "javaScript"],
+    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
     live_demo: "#",
     source_code:
       "#",
   },
   {
-    name: "Tonix",
+    name: "Tonic",
     title: ["CANOPY", "Back End Dev", "2015"],
     image: "img/Snapshoot Portfolio3.png",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technology: ["html", "css", "javaScript"],
+    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
     live_demo: "#",
     source_code:
       "#",
@@ -52,7 +52,7 @@ const projectContent = [
     image: "img/Snapshoot Portfolio4.png",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technology: ["html", "css", "javaScript"],
+    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
     live_demo: "#",
     source_code:
       "#",
@@ -60,69 +60,84 @@ const projectContent = [
 ]
 let index = 0;
 const item = projectContent[index];
-console.log(item.title);
 
 
-const modalContent = document.querySelectorAll(".cardone");
-const modalDiv = document.createElement("div");
-modalDiv.className = "modal-section";
-modalContent.appendChild(modalDiv);
-const modal = document.querySelector(".modal-section");
-const viewProjectDetailButton = document.querySelectorAll(".cardbutton");
-viewProjectDetailButton.forEach((buttons, index) => {
-  buttons.addEventListener("click", () => {
-    console.log("Hello yoooo");
-    item.title;
-    modalDiv.innerHTML = `
-              
-    <div class="modalContainer">
-        <div class="close-modal-button">
-            <h3 class="projecTitle">${item.name}</h3>
-              <img src="img/close.svg" alt=""> 
-        </div>
-        <div class="tframes">
-          <h3>${item.title}</h3>
-          <ol class="frames-list">
-            <li>
-              <img src="img/work-img/Counter.png" />
-            </li>
-            <li> ${item.title[1]}</li> 
-            <li>
-              <img src="img/work-img/Counter.png" />
-            </li>
-            <li>${item.title[2]}</li>
-          </ol>
-        </div>
-        <div class="modal-snapshot-portofolio">
-          <img src=${item.image} alt="">
-        </div>
-    <div class="modalProjectdetail">
-          <p class="project-text parag-width">
-              ${item.desc}
-          </p>
-        <div>
-          <ul class="tag-list">
-            <li>${item.technology[0]}</li>
-            <li>${item.technology[1]}</li>
-            <li>${item.technology[2]}</li>
-           </ul>
-        <div class="project-detail-button">
-          <div class="blocks-buttonWrapper modal-link-button">
-            <button class="blocks-button"><a class="live project-detail-link" href="${item.live_demo}">See live</a><img src="img/live.svg" alt="live"></button>
-            <button class="blocks-button"><a class="source project-detail-link" href="${item.source_code}">See source</a><img src="img/source.svg" alt="source"></button>
-          </div>
-        </div>
+const modal = document.querySelector("#modal");
+const popupContainer = document.createElement('div');
+popupContainer.className = 'popup-container';
+const popupImage = document.createElement('img');
+popupImage.className = 'popup-image';
+modal.appendChild(popupContainer);
+popupContainer.appendChild(popupImage);
+const openButton = document.querySelectorAll(".cardbutton");
+openButton.forEach((buttons) => {
+  buttons.addEventListener('click', () => {
+    console.log("Hey yoo");
+    modal.showModal();
+    popupContainer.innerHTML = `
+    <section class="cardonejs">
+    <div class="header-nav">
+      <h2>${item.name}</h2>
+      <button class="closs-button">&times;</button>
     </div>
+    <div class="conpyjs">
+      <p class="canopytxt">${item.title[0]}</p>
+      <img src="img/Counter.png" alt="point separetor image" />
+      <p class="backtxt">${item.title[1]}</p>
+      <img src="img/Counter.png" alt="point separetor image" />
+      <p class="yeartxt">${item.title[2]}</p>
     </div>
-   </div>
 
-
-    `;
-
-    modal.classList.add("openModal");
-    const modalCloseButton = document.querySelector(".close-modal-button img");
-    modalCloseButton.addEventListener("click", () => {
-      modal.classList.remove("openModal");
-    });
-  });
+    <div class="cardoneimagejs">
+      <img
+        src="${item.image}"
+        class="imagejs"
+        alt="Tonic Image"
+      />
+    </div>
+    <div class="thirdjs">
+      <p class="cardtxtjs">
+        ${item.desc}
+      </p>
+      <div class="right">
+        <div class="listjs">
+          <ul class="langjs1 lang">
+            <li class="langtxt" id="htmltxt">${item.technology[0]}</li>
+            <li class="langtxt" id="csstxt">${item.technology[1]}</li>
+            <li class="langtxt" id="javascripttxt">${item.technology[2]}</li>
+          </ul>
+          <ul class="langjs2">
+            <li class="langtxt" id="htmltxt">${item.technology[3]}</li>
+            <li class="langtxt" id="csstxt">${item.technology[4]}</li>
+          </ul>
+        </div>
+        <img
+          src="img/separatorJs.png"
+          class="separetorjs"
+          alt="point separetor image"
+        />
+        <div class="buttonjs">
+          <button class="btntxtjs">${item.live_demo}<img src="img/Github.png" alt="" />
+          </button>
+          <button class="btntxtjs">${item.source_code} <img src="img/Github.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  `
+  const closeButton = document.querySelector(".closs-button");
+  closeButton.addEventListener('click', () => {
+    modal.close();
+  })  
 });
+});
+
+// const modal = document.querySelector("#modal");
+// const closeButton = document.querySelector(".closs-button");
+// const openButton = document.querySelector(".open-model");
+// openButton.addEventListener('click', () => {
+//   modal.showModal();
+// })
+
+
