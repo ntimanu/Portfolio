@@ -1,66 +1,119 @@
-const toggleButton = document.getElementsByClassName('hamburger')[0];
-const navbarLinks = document.getElementsByClassName('navbar-links')[0];
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active');
-  toggleButton.classList.toggle('hidden');
+const toggleButton = document.getElementsByClassName("hamburger")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+toggleButton.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
+  toggleButton.classList.toggle("hidden");
 });
 
-document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
-  toggleButton.classList.remove('active');
-  navbarLinks.classList.remove('active');
-}));
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    toggleButton.classList.remove("active");
+    navbarLinks.classList.remove("active");
+  })
+);
 
 // Popup Window
 
 const projectContent = [
   {
-    name: 'Tonic',
-    title: ['CANOPY', 'Back End Dev', '2015'],
-    image: 'img/Snapshoot Portfolio.png',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'css', 'javaScript', 'Ruby', 'Bootstrap'],
-    live_demo: 'https://ntimanu.github.io/Portfolio/',
-    source_code: 'https://github.com/ntimanu/Portfolio',
+    name: "Tonic",
+    title: ["CANOPY", "Back End Dev", "2015"],
+    image: "img/Snapshoot Portfolio.png",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
+    live_demo: "https://ntimanu.github.io/Portfolio/",
+    source_code: "https://github.com/ntimanu/Portfolio",
   },
   {
-    name: 'Multi-Post Stories',
-    title: ['CANOPY', 'Back End Dev', '2015'],
-    image: 'img/Snapshoot Portfolio2.png',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'css', 'javaScript', 'Ruby', 'Bootstrap'],
-    live_demo: 'https://ntimanu.github.io/Portfolio/',
-    source_code: 'https://github.com/ntimanu/Portfolio',
+    name: "Multi-Post Stories",
+    title: ["CANOPY", "Back End Dev", "2015"],
+    image: "img/Snapshoot Portfolio2.png",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
+    live_demo: "https://ntimanu.github.io/Portfolio/",
+    source_code: "https://github.com/ntimanu/Portfolio",
   },
   {
-    name: 'Tonic',
-    title: ['CANOPY', 'Back End Dev', '2015'],
-    image: 'img/Snapshoot Portfolio3.png',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'css', 'javaScript', 'Ruby', 'Bootstrap'],
-    live_demo: 'https://ntimanu.github.io/Portfolio/',
-    source_code: 'https://github.com/ntimanu/Portfolio',
+    name: "Tonic",
+    title: ["CANOPY", "Back End Dev", "2015"],
+    image: "img/Snapshoot Portfolio3.png",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
+    live_demo: "https://ntimanu.github.io/Portfolio/",
+    source_code: "https://github.com/ntimanu/Portfolio",
   },
   {
-    name: 'Multi-Post Stories',
-    title: ['CANOPY', 'Back End Dev', '2015'],
-    image: 'img/Snapshoot Portfolio4.png',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'css', 'javaScript', 'Ruby', 'Bootstrap'],
-    live_demo: 'https://ntimanu.github.io/Portfolio/',
-    source_code: 'https://github.com/ntimanu/Portfolio',
+    name: "Multi-Post Stories",
+    title: ["CANOPY", "Back End Dev", "2015"],
+    image: "img/Snapshoot Portfolio4.png",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
+    live_demo: "https://ntimanu.github.io/Portfolio/",
+    source_code: "https://github.com/ntimanu/Portfolio",
   },
 ];
 
-const modal = document.querySelector('#modal');
-const popupContainer = document.createElement('div');
-popupContainer.className = 'popup-container';
-const popupImage = document.createElement('img');
-popupImage.className = 'popup-image';
+// create a dynamic work section
+
+const workContent = document.getElementById("work");
+const div = document.createElement("div");
+div.className = "cardone";
+workContent.appendChild(div);
+div.innerHTML = projectContent.reduce(
+  (output, project) => `${output}
+    
+          <div class="cardoneimage">
+            <img
+              src="${project.image}"
+              class="image"
+              alt="Tonic Image"
+            />
+          </div>
+
+          <div class="card1txt">
+            <h2>${project.name}</h2>
+            <div class="conpy">
+              <p class="canopytxt">${project.title[0]}</p>
+              <img src="img/Counter.png" alt="point separetor image" />
+              <p class="backtxt">${project.title[1]}</p>
+              <img src="img/Counter.png" alt="point separetor image" />
+              <p class="yeartxt">2015</p>
+            </div>
+
+            <p class="cardtxt">
+             ${project.desc}
+            </p>
+            <div class="lang">
+              <ul>
+                <li class="langtxt" id="htmltxt">${project.technology[0]}</li>
+                <li class="langtxt" id="csstxt">${project.technology[1]}</li>
+                <li class="langtxt" id="javascripttxt">${project.technology[2]}</li>
+              </ul>
+            </div>
+            <button class="btntxt cardbutton">See Project</button>
+          </div>
+    
+          `,
+  ""
+);
+
+const reverseCard = document.querySelectorAll(".cardone");
+reverseCard.forEach((rev, index) => {
+  if (index % 2 !== 0) {
+    rev.classList.toggle("reversecard");
+  }
+});
+
+const modal = document.querySelector("#modal");
+const popupContainer = document.createElement("div");
+popupContainer.className = "popup-container";
+const popupImage = document.createElement("img");
+popupImage.className = "popup-image";
 modal.appendChild(popupContainer);
 popupContainer.appendChild(popupImage);
-const openButton = document.querySelectorAll('.cardbutton');
+const openButton = document.querySelectorAll(".cardbutton");
 openButton.forEach((buttons, i) => {
-  buttons.addEventListener('click', () => {
+  buttons.addEventListener("click", () => {
     modal.showModal();
     popupContainer.innerHTML = `
     <section class="cardonejs">
@@ -114,8 +167,8 @@ openButton.forEach((buttons, i) => {
     </div>
   </section>
   `;
-    const closeButton = document.querySelector('.closs-button');
-    closeButton.addEventListener('click', () => {
+    const closeButton = document.querySelector(".closs-button");
+    closeButton.addEventListener("click", () => {
       modal.close();
     });
   });
