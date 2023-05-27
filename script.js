@@ -52,8 +52,6 @@ const projectContent = [
     source_code: "https://github.com/ntimanu/Portfolio",
   },
 ];
-// let index = 0;
-// const item = projectContent[index];
 
 const modal = document.querySelector("#modal");
 const popupContainer = document.createElement("div");
@@ -63,44 +61,44 @@ popupImage.className = "popup-image";
 modal.appendChild(popupContainer);
 popupContainer.appendChild(popupImage);
 const openButton = document.querySelectorAll(".cardbutton");
-openButton.forEach((buttons, index) => {
+openButton.forEach((buttons, i) => {
   buttons.addEventListener("click", () => {
     modal.showModal();
     popupContainer.innerHTML = `
     <section class="cardonejs">
     <div class="header-nav">
-      <h2>${projectContent[index].name}</h2>
+      <h2>${projectContent[i].name}</h2>
       <button class="closs-button">&times;</button>
     </div>
     <div class="conpyjs">
-      <p class="canopytxt">${projectContent[index].title[0]}</p>
+      <p class="canopytxt">${projectContent[i].title[0]}</p>
       <img src="img/Counter.png" alt="point separetor image" />
-      <p class="backtxt">${projectContent[index].title[1]}</p>
+      <p class="backtxt">${projectContent[i].title[1]}</p>
       <img src="img/Counter.png" alt="point separetor image" />
-      <p class="yeartxt">${projectContent[index].title[2]}</p>
+      <p class="yeartxt">${projectContent[i].title[2]}</p>
     </div>
 
     <div class="cardoneimagejs">
       <img
-        src="${projectContent[index].image}"
+        src="${projectContent[i].image}"
         class="imagejs"
         alt="Tonic Image"
       />
     </div>
     <div class="thirdjs">
       <p class="cardtxtjs">
-        ${projectContent[index].desc}
+        ${projectContent[i].desc}
       </p>
       <div class="right">
         <div class="listjs">
           <ul class="langjs1 lang">
-            <li class="langtxt" id="htmltxt">${projectContent[index].technology[0]}</li>
-            <li class="langtxt" id="csstxt">${projectContent[index].technology[1]}</li>
-            <li class="langtxt" id="javascripttxt">${projectContent[index].technology[2]}</li>
+            <li class="langtxt" id="htmltxt">${projectContent[i].technology[0]}</li>
+            <li class="langtxt" id="csstxt">${projectContent[i].technology[1]}</li>
+            <li class="langtxt" id="javascripttxt">${projectContent[i].technology[2]}</li>
           </ul>
           <ul class="langjs2">
-            <li class="langtxt" id="htmltxt">${projectContent[index].technology[3]}</li>
-            <li class="langtxt" id="csstxt">${projectContent[index].technology[4]}</li>
+            <li class="langtxt" id="htmltxt">${projectContent[i].technology[3]}</li>
+            <li class="langtxt" id="csstxt">${projectContent[i].technology[4]}</li>
           </ul>
         </div>
         <img
@@ -109,9 +107,9 @@ openButton.forEach((buttons, index) => {
           alt="point separetor image"
         />
         <div class="buttonjs">
-          <button class="btntxtjs" href="${projectContent[index].live_demo}">See live <img src="img/live.svg" alt="" />
+          <button class="btntxtjs" href="${projectContent[i].live_demo}">See live <img src="img/live.svg" alt="" />
           </button>
-          <button class="btntxtjs"href="${projectContent[index].source_code}">See source <img src="img/source.svg" alt="" />
+          <button class="btntxtjs"href="${projectContent[i].source_code}">See source <img src="img/source.svg" alt="" />
           </button>
         </div>
       </div>
@@ -125,9 +123,3 @@ openButton.forEach((buttons, index) => {
   });
 });
 
-// const modal = document.querySelector("#modal");
-// const closeButton = document.querySelector(".closs-button");
-// const openButton = document.querySelector(".open-model");
-// openButton.addEventListener('click', () => {
-//   modal.showModal();
-// })
