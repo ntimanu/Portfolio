@@ -1,68 +1,66 @@
-const toggleButton = document.getElementsByClassName("hamburger")[0];
-const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-toggleButton.addEventListener("click", () => {
-  navbarLinks.classList.toggle("active");
-  toggleButton.classList.toggle("hidden");
+const toggleButton = document.getElementsByClassName('hamburger')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active');
+  toggleButton.classList.toggle('hidden');
 });
 
-document.querySelectorAll(".nav-link").forEach((n) =>
-  n.addEventListener("click", () => {
-    toggleButton.classList.remove("active");
-    navbarLinks.classList.remove("active");
-  })
-);
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  toggleButton.classList.remove('active');
+  navbarLinks.classList.remove('active');
+}));
 
-//Popup Window
+// Popup Window
 
 const projectContent = [
   {
-    name: "Tonic",
-    title: ["CANOPY", "Back End Dev", "2015"],
-    image: "img/Snapshoot Portfolio.png",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
-    live_demo: "https://ntimanu.github.io/Portfolio/",
-    source_code: "https://github.com/ntimanu/Portfolio",
+    name: 'Tonic',
+    title: ['CANOPY', 'Back End Dev', '2015'],
+    image: 'img/Snapshoot Portfolio.png',
+    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    technology: ['html', 'css', 'javaScript', 'Ruby', 'Bootstrap'],
+    live_demo: 'https://ntimanu.github.io/Portfolio/',
+    source_code: 'https://github.com/ntimanu/Portfolio',
   },
   {
-    name: "Multi-Post Stories",
-    title: ["CANOPY", "Back End Dev", "2015"],
-    image: "img/Snapshoot Portfolio2.png",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
-    live_demo: "https://ntimanu.github.io/Portfolio/",
-    source_code: "https://github.com/ntimanu/Portfolio",
+    name: 'Multi-Post Stories',
+    title: ['CANOPY', 'Back End Dev', '2015'],
+    image: 'img/Snapshoot Portfolio2.png',
+    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    technology: ['html', 'css', 'javaScript', 'Ruby', 'Bootstrap'],
+    live_demo: 'https://ntimanu.github.io/Portfolio/',
+    source_code: 'https://github.com/ntimanu/Portfolio',
   },
   {
-    name: "Tonic",
-    title: ["CANOPY", "Back End Dev", "2015"],
-    image: "img/Snapshoot Portfolio3.png",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
-    live_demo: "https://ntimanu.github.io/Portfolio/",
-    source_code: "https://github.com/ntimanu/Portfolio",
+    name: 'Tonic',
+    title: ['CANOPY', 'Back End Dev', '2015'],
+    image: 'img/Snapshoot Portfolio3.png',
+    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    technology: ['html', 'css', 'javaScript', 'Ruby', 'Bootstrap'],
+    live_demo: 'https://ntimanu.github.io/Portfolio/',
+    source_code: 'https://github.com/ntimanu/Portfolio',
   },
   {
-    name: "Multi-Post Stories",
-    title: ["CANOPY", "Back End Dev", "2015"],
-    image: "img/Snapshoot Portfolio4.png",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technology: ["html", "css", "javaScript", "Ruby", "Bootstrap"],
-    live_demo: "https://ntimanu.github.io/Portfolio/",
-    source_code: "https://github.com/ntimanu/Portfolio",
+    name: 'Multi-Post Stories',
+    title: ['CANOPY', 'Back End Dev', '2015'],
+    image: 'img/Snapshoot Portfolio4.png',
+    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    technology: ['html', 'css', 'javaScript', 'Ruby', 'Bootstrap'],
+    live_demo: 'https://ntimanu.github.io/Portfolio/',
+    source_code: 'https://github.com/ntimanu/Portfolio',
   },
 ];
 
-const modal = document.querySelector("#modal");
-const popupContainer = document.createElement("div");
-popupContainer.className = "popup-container";
-const popupImage = document.createElement("img");
-popupImage.className = "popup-image";
+const modal = document.querySelector('#modal');
+const popupContainer = document.createElement('div');
+popupContainer.className = 'popup-container';
+const popupImage = document.createElement('img');
+popupImage.className = 'popup-image';
 modal.appendChild(popupContainer);
 popupContainer.appendChild(popupImage);
-const openButton = document.querySelectorAll(".cardbutton");
+const openButton = document.querySelectorAll('.cardbutton');
 openButton.forEach((buttons, i) => {
-  buttons.addEventListener("click", () => {
+  buttons.addEventListener('click', () => {
     modal.showModal();
     popupContainer.innerHTML = `
     <section class="cardonejs">
@@ -116,10 +114,9 @@ openButton.forEach((buttons, i) => {
     </div>
   </section>
   `;
-    const closeButton = document.querySelector(".closs-button");
-    closeButton.addEventListener("click", () => {
+    const closeButton = document.querySelector('.closs-button');
+    closeButton.addEventListener('click', () => {
       modal.close();
     });
   });
 });
-
