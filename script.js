@@ -168,3 +168,16 @@ openButton.forEach((buttons, i) => {
     });
   });
 });
+
+// Contact Form validation
+
+const contactForm = document.getElementById('form-id');
+const contactEmail = document.getElementById('email-id');
+const contactError = document.getElementById('errormessage');
+
+contactForm.addEventListener('submit', (event) => {
+  if (contactEmail.value.toLowerCase() !== contactEmail.value) {
+    event.preventDefault();
+    contactError.innerText = 'Please type your email in lowercase. Form not submitted';
+  }
+});
