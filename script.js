@@ -57,41 +57,38 @@ const projectContent = [
 
 const workContent = document.getElementById("work");
 const div = document.createElement("div");
-div.className = "cardone";
+div.className = "work-section";
 workContent.appendChild(div);
 div.innerHTML = projectContent.reduce(
   (output, project) => `${output}
     
-          <div class="cardoneimage">
-            <img
-              src="${project.image}"
-              class="image"
-              alt="Tonic Image"
-            />
-          </div>
+  <div class="cardone card1">
+  <div class="cardoneimage">
+    <img src="${project.image}" class="image" alt="Tonic Image" />
+  </div>
+  <div class="card1txt">
+    <h2>${project.name}</h2>
+    <div class="conpy">
+      <p class="canopytxt">${project.title[0]}</p>
+      <img src="img/Counter.png" alt="point separetor image" />
+      <p class="backtxt">${project.title[1]}</p>
+      <img src="img/Counter.png" alt="point separetor image" />
+      <p class="yeartxt">2015</p>
+    </div>
 
-          <div class="card1txt">
-            <h2>${project.name}</h2>
-            <div class="conpy">
-              <p class="canopytxt">${project.title[0]}</p>
-              <img src="img/Counter.png" alt="point separetor image" />
-              <p class="backtxt">${project.title[1]}</p>
-              <img src="img/Counter.png" alt="point separetor image" />
-              <p class="yeartxt">2015</p>
-            </div>
-
-            <p class="cardtxt">
-             ${project.desc}
-            </p>
-            <div class="lang">
-              <ul>
-                <li class="langtxt" id="htmltxt">${project.technology[0]}</li>
-                <li class="langtxt" id="csstxt">${project.technology[1]}</li>
-                <li class="langtxt" id="javascripttxt">${project.technology[2]}</li>
-              </ul>
-            </div>
-            <button class="btntxt cardbutton">See Project</button>
-          </div>
+    <p class="cardtxt">${project.desc}</p>
+    <div class="lang">
+      <ul>
+        <li class="langtxt" id="htmltxt">${project.technology[0]}</li>
+        <li class="langtxt" id="csstxt">${project.technology[1]}</li>
+        <li class="langtxt" id="javascripttxt">
+          ${project.technology[2]}
+        </li>
+      </ul>
+    </div>
+    <button class="btntxt cardbutton">See Project</button>
+  </div>
+</div>
     
           `,
   ""
